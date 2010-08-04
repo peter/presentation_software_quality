@@ -1,0 +1,33 @@
+h1. Methodology
+
+h1. TDD
+
+"The simple fact that you are continually aligning your code to the tests results in code that is made up of small methods, each of which does one thing. These methods tend to be loosely coupled and have minimal side-effects."
+
+"In effect, the tests act as a universal client for the entire code base, guiding all the code to have clean interactions between parts because the tests, acting as a third-party interloper, have to get in between all the parts of the code in order to work."
+
+h1. The Agile Manifesto
+
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
+
+h1. Extreme Programming
+
+<div class="quote">
+"A software development methodology which is intended to improve software quality and responsiveness to changing customer requirements"
+</div>
+
+h1. Practices of Extreme Programming
+
+* Pair programming, Planning Game, TDD, Involving the Customer
+* Continuos Integration, Refactoring, Small Releases
+* Coding Standards, Collective Code Ownership, Simple Design, System Metaphor
+* Sustainable Pace
+
+h1. Rockstars?
+
+<div class="quote">
+"Rockstar environments develop out of trust, responsibility, and autonomy. They're the result of giving people the privacy, workspace, and tools they deserve."
+</div>

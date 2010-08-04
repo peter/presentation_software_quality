@@ -1,0 +1,157 @@
+############################################################################################
+### Software Quality
+############################################################################################
+
+############################################################################################
+### TABLE OF CONTENTS
+############################################################################################
+
+* Principles (Understanding Quality)
+* Methodology (Achieving Quality)
+* Metrics (Measuring Quality in Ruby)
+
+############################################################################################
+### PRINCIPLES
+############################################################################################
+
+# What does Wikipedia say?
+("Software Quality (Wikipedia)":http://en.wikipedia.org/wiki/Software_quality)
+Cryptic definition
+Can mean a lot of different things to different people
+Discussion point: what are the tradeoffs here, if any?
+Quality Factors (Non Functional)
+Reliability is correctness over time in different environments
+Maintainability - "is a change likely to require restructuring the main program, or just a module?". Modification costs.
+Consistency - includes coding conventions, idioms, single way to do something is used everywhere
+Readability - understandability
+Conciseness - minimizing the amount of code (no unused/redundant code, DRY)
+These are a lot of different goals that can pull us in different directions. We need to find proper tradeoffs.
+
+# Cohesion
+- "if the methods that serve the given class tend to be similar in many aspects, then the class is said to have high cohesion. In a highly-cohesive system, code readability and the likelihood of reuse is increased, while complexity is kept manageable."
+
+# Coupling
+- A change in one module usually forces a ripple-effect of changes in other modules.
+
+# How does Microsoft do it?
+(Quote from Kent Beck)
+- Microsoft release process
+
+# Software Health
+http://itc.conversationsnetwork.org/shows/detail301.html#
+Kent Beck - The Future of Developer Testing (2004)
+Accountability, blame
+Health is different from quality
+Quality is instantaneous measure, what happens if we deploy now? Bug count. Is today gonna be the day when my software has no bugs?
+Health is state over time. How does the system respond to stress? How does the software respond to change in the load, usage patterns, requirements, the customer base.
+How healthy are the employees.
+What is the health of the relationships, in the team, with customers, with managers.
+Health is your responsibility.
+What is this going to cost? Compared to what?
+People don't have a sense of how good software can be. One defect a month. One defect a year.
+What are the benefits that come when you can trust the software works the way it ought to?
+Culture of plausible deniability. This code is not completely tested, but I think it works.
+You are not done until you have the tests.
+Don't tell me what to do.
+Energized work (40 hours a week). Having hobbies. Having good relationships with non-geeks. I swear it's a good idea.
+How much energy you bring affects the performance of your team. If you as a developer write tests, your team will be more effective.
+
+# Questions About a Method
+- Choose one level of abstraction
+
+# Principles of OO Design
+("GoF Design Patterns (Wikipedia)":http://en.wikipedia.org/wiki/Design_Patterns)
+- white-box reuse versus black-box reuse
+- 'delegation' is an extreme form of object composition that can always be used to replace inheritance
+
+# Why Style Matters
+("JavaScript the Good Parts":http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742)
+- Has been criticized for being bitter and self righteous. But he is a great writer with important insights.
+- DHH: Ruby is french and Java is german
+
+# Conceptual integrity
+- A single mind is the ideal
+- A functional architect (product owner)
+- An implementation architect
+
+############################################################################################
+### METHODOLOGY
+############################################################################################
+
+# TDD
+"If you use this process, you will find that it changes the structure of the code you write. The simple fact that you are continually aligning your code to the tests results in code that is made up of small methods, each of which does one thing. These methods tend to be loosely coupled and have minimal side-effects.
+As it happens, the hallmark of well-designed code is small methods that do one thing, are loosely coupled, and have minimal side-effects. I used to think that was kind of a lucky coincidence, but now I think it’s a direct side-effect of building the code in tandem with the tests. In effect, the tests act as a universal client for the entire code base, guiding all the code to have clean interactions between parts because the tests, acting as a third-party interloper, have to get in between all the parts of the code in order to work." - from Rails Test Prescriptions
+- Verification is a bonus
+
+# The Agile Manifesto
+"Agile Manifesto (Wikipedia)":http://en.wikipedia.org/wiki/Agile_Manifesto
+- Striking a balance between left and right. It's not an either-or proposition. We have to remember that Agile was born in an environment that was way to far to the right. 
+
+# XP
+- Do the simplest thing that can possibly work the code needs to communicate to humans
+  up to 5 times as much time goes into maintaining the code than writing it.
+
+# XP Practices
+- Fine scale feedback
+- Continuous process
+- Shared understanding
+- Programmer welfare
+
+############################################################################################
+### METRICS
+############################################################################################
+
+############################################################################################
+### REFERENCES
+############################################################################################
+
+* "Software Quality (Wikipedia)":http://en.wikipedia.org/wiki/Software_quality
+* "The Broken Iron Triangle of Software Development":http://www.ambysoft.com/essays/brokenTriangle.html
+* "Project triangle (Wikipedia)":http://en.wikipedia.org/wiki/Project_triangle
+* "Kent Beck (Wikipedia)":http://en.wikipedia.org/wiki/Kent_Beck
+* "Kent Beck: Developer Testing":http://itc.conversationsnetwork.org/shows/detail301.html#
+* "Kent Beck: Smalltalk Best Practice Patterns":http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X
+* "Kent Beck on Implementation Patterns":http://www.infoq.com/interviews/beck-implementation-patterns
+* "Cohesion (Wikipedia)":http://en.wikipedia.org/wiki/Cohesion_%28computer_science%29
+* "Coupling (Wikipedia)":http://en.wikipedia.org/wiki/Coupling_%28computer_science%29
+* "Software metric (Wikipedia)":http://en.wikipedia.org/wiki/Software_metrics
+* "GoF Design Patterns (Wikipedia)":http://en.wikipedia.org/wiki/Design_Patterns
+* "Agile Manifesto (Wikipedia)":http://en.wikipedia.org/wiki/Agile_Manifesto
+* "Extreme Programming":http://en.wikipedia.org/wiki/Extreme_Programming
+* "JavaScript the Good Parts":http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++ temporary notes below, unstructured ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- Single resp principle for classes
+- http://en.wikipedia.org/wiki/Law_of_Demeter
+- SOLID http://en.m.wikipedia.org/wiki/Solid_(object-oriented_design)
+- SOLID in Ruby http://github.com/jimweirich/presentation_solid_ruby
+- Incorporate other stuff from Object Design
+- RailsConf 2010: http://en.oreilly.com/rails2010/public/schedule/proceedings
+- RailsConf 2009: http://en.oreilly.com/rails2009/public/schedule/proceedings
+- Convention over Configuration
+
+
+############################################################################################
+### REFERENCES FOR CONSIDERATION
+############################################################################################
+
+* "Marcel Molina and Jamis Buck: Rails Code Review":http://mtnwestrubyconf2007.confreaks.com/session10.html
+* "Fred Brooks: The Mythical Man Month":http://en.wikipedia.org/wiki/The_Mythical_Man-Month
+* "Jason Fried, DHH: Rework":http://www.amazon.com/Rework-Jason-Fried/dp/0307463745
+* "Marty Andrews: Code Quality Analysis":http://en.oreilly.com/rails2009/public/schedule/detail/6752
+* "Jake Scruggs: Using Metric Fu to Make Your Rails Code Better (Railsconf 2009)":http://en.oreilly.com/rails2009/public/schedule/detail/7935
+* "Jake Scruggs: Metric Fu Presentation":http://www.channels.com/episodes/show/4013322/Using-metric-fu-to-Make-Your-Rails-Code-Better-Jake-Scruggs
+* "Ruby on Rails Code Quality Checklist":http://www.matthewpaulmoore.com/ruby-on-rails-code-quality-checklist
+* "Peter Marklund: Test Driven Development with Ruby":http://marklunds.com/test-driven-development-with-ruby.html
+
+Lean Software Development
+http://en.wikipedia.org/wiki/Lean_software_development
+
+Acceptance testing
+http://en.wikipedia.org/wiki/Acceptance_tests
+
+The complexity cost of functionality is bigger than you think

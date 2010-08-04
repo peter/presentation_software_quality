@@ -1,0 +1,9 @@
+h1. Metrics
+
+h1. Ruby Metrics Tools
+
+* Flay - duplication
+* Flog - code complexity
+* Rcov - code coverage
+* Reek - code smell detection
+* Roodi, Saikuro - method complexity

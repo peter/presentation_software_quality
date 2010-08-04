@@ -1,0 +1,5 @@
+h1. Table of Contents
+
+* "Principles":principles.html
+* "Methodology":methodology.html
+* "Metrics":metrics.html

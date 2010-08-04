@@ -1,0 +1,87 @@
+h1. Principles
+
+h1. What does Wikipedia say?
+* Correctness - Works as Intended, Bug Free, Reliable and Robust
+* Maintainability - Understandability, Readability, Consistency, Conciseness, Extensibility
+* Portability
+* Efficiency, Scalability, Security
+
+h1. Cohesion
+
+How strongly related and focused the functionality of a software module is
+
+h1. Disadvantages of Low Cohesion
+
+* Difficult to understand
+* Difficult to change because of ripple effects
+* Difficult to reuse since most apps won't need the random set of operations provided
+
+h1. Types of Cohesion
+
+* Coincidental
+* Logical
+* Temporal
+* Procedural
+* Communicational
+* Sequential
+* Function (BEST)
+
+h1. Coupling
+
+* The degree to which each program module relies on each one of the other modules
+* Low coupling often correlates with high cohesion, and vice versa
+
+h1. Design Decisions
+
+* How do you choose names for objects, variables, and methods?
+* How do you break logic into methods?
+* How do you communicate most clearly through your code?
+
+h1. Questions About a Method
+
+* What does it do?
+* What is the contract?
+* Where is it used?
+* If I change it, what parts of the system are affected?
+
+h1. Principles of OO Design
+
+* Code to an Interface not an Implementation (Encapsulation, Polymorphism, Information Hiding)
+* Favor object composition over class inheritance
+
+h1. Why Style Matters
+
+"Computer programs are the most complex things humans make."
+
+"The process of converting one correct program into a different correct program is extremely challenging." "Good programs have a structure that anticipates - but is not overly burdened by - the possible modifications that will be required in the future"
+
+"Style matters in programming for the same reason that it matters in writing. It makes for better reading." "it turns out that the likelihood a program will work is significantly enhanced by our ability to read it"
+
+"code that appears to mean one thing but actually means another is likely to cause bugs" "I want to avoid idioms that look like mistakes" "pay attention to features that are sometimes useful but occasionally dangerous. Those are the worst parts..."
+
+h1. Conceptual Integrity
+
+* User friendliness
+* An architect who acts on the users behalf and decides what goes in and what stays out
+* An idea/vision of what the system should do is communicated to the team
+* A feature is not included if it does not fit with the overall system design
+
+h1. How Does Microsoft do it?
+
+<div class="quote">
+"You've got this software, and it's like Jello and people are making changes, and it's shaking and it's shaking, and you think you're getting close, but the software's still shaking, and then it stops shaking just for a second, and that's when you ship it." 
+</div>
+
+h1. Software Health
+
+* Quality over time. How the system responds to stress
+* Physical health
+* Relationships, in the team, with customers, with managers.
+
+h1. What Could Possibly Change?
+
+* Environment
+* Team
+* Requirements
+* Technology
+* User Base

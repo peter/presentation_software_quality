@@ -1,0 +1,10 @@
+#growing-list {
+	list-style-type: none;
+  padding: 30px;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  margin: 50px;
+}
